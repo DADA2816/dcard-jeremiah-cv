@@ -15,7 +15,7 @@
     .mov-title{
         transition: all 0.3s;
         &:hover,&:active{
-            color: $second;
+            color: $dcard-blue;
         }
     }
     .mov-title:before{

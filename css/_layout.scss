@@ -4,7 +4,7 @@
 body{
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif,'Noto Serif','Noto Serif TC';
-    background-color: $third;
+    background-color: white;
     img{
         display: block;
         width: 100%;
@@ -23,7 +23,7 @@ body{
         .menu{
             transition: all 0.3s;
             &:hover,&:active{
-                color: $second;
+                color: $dcard-blue;
             }
         }
     }
@@ -57,13 +57,13 @@ body{
         text-align: center;
         transition: max-height 1s;
         li{
-            background-color: $second;
+            background-color: $third;
         }
         a{
-            transition: all 0.3s;
             color: $primary;
             &:hover,&:active{
                 color: white;
+                background-color: $second;
             }
         }
     }
@@ -102,7 +102,7 @@ body{
     a{
         transition: all 0.3s;
         &:hover,&:active{
-            color: $second;
+            color: $dcard-blue;
         }
     }
 }

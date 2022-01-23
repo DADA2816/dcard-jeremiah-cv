@@ -56,7 +56,6 @@
         }
         .img-2{
             background-image:url(../img/shoot.jpg);
-            border-bottom: 1px solid black;
         }
         .img-3{
             background-image:url(../img/回.jpg);
@@ -66,10 +65,10 @@
         height: 300px;
         a{
             transition: all 0.3s;
-            background-color: $primary;
-            border: 1px solid $primary;
+            background-color: $dcard-blue;
+            border: 1px solid $dcard-blue;
             &:hover,&:active{
-                color: $primary;
+                color: $dcard-blue;
                 background-color: white;
             }
         }
