@@ -1,13 +1,152 @@
 .index{
     .banner{
-        // padding-top: 50px;
-        // img{
-        //     // padding-top: 10px;
-        //     // height: 700px;
-        // }
-        .pcb-slogan{
-            color: $primary;
-            font-size: 45px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 120px 0px 150px;
+        position: relative;
+        // left
+        img{
+            max-width: 600px;
+            height: 445px;
+            margin-left: 50px;
+            border-radius: 12px;
+        }
+        .tri-l{
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 110px;
+            left: 70px;
+            border-style: solid;
+            border-width: 80px 80px 0 0;
+            border-color: $dcard-blue transparent transparent transparent;
+        }
+        .tri-r{
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 495px;
+            left: 608px;
+            border-style: solid;
+            border-width: 0 0 80px 80px;
+            border-color: transparent transparent $dcard-blue transparent;
+        }
+        // right
+        .right{
+            position: relative;
+            border-radius: 12px;
+            max-width: 445px;
+            box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.137);
+
+        }
+        .dinu{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+        }
+    }
+    .pcb-slogan{
+        font-size: 40px;
+        line-height: 1.8;
+    }
+    .sub-banner{
+        max-width: 992px;
+        margin: 0 auto;
+        padding: 100px 0px 120px;
+        position: relative;
+    }
+    .explain{
+        max-width: 992px;
+        margin: 0 auto;
+        padding: 120px 50px;
+        flex-wrap: wrap;
+        .content-1,.content-2,.content-3{
+            border-radius: 12px;
+            max-width: 50%;
+            box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.137);
+            line-height: 1.5;
+        }
+        .zolly{
+            width: 150px;
+            height: 200px;
+        }
+        .remi{
+            width: 110px;
+            height: 160px;
+        }
+        .dinu{
+            width: 140px;
+            height: 130px;
+        }
+    }
+    .add{
+        padding: 10px 50px 120px;
+        position: relative;
+        background-color: $third;
+        .add-content{
+            max-width: 892px;
+            margin: 0 auto;
+            padding: 30px;
+            background: url(../img/90-50-10.png);
+            border: 1px solid #eee; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.06) inset;
+            line-height: 1.5;
+        }
+    }
+    .tape{
+        width: 200px;
+        height: 50px;
+        background-color: $primary;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .index-con{
+        max-width: 992px;
+        margin: 0 auto;
+        padding: 120px 50px;
+    }
+
+    .three{
+        // background-image: url(../img/note1.jpeg);
+        background-color: white;
+        background-position: center;
+        background-repeat: repeat-y;
+        background-size: contain;
+        line-height: 1.8;
+        padding-top: 70px;
+        h2{
+            font-size: 35px;
+        }
+    }
+    
+    .weapon{
+        max-width: 992px;
+        line-height: 1.8;
+        padding: 50px 50px 90px;
+        li{
+            width: 30%;
+            .img-1,.img-2,.img-3{
+                height: 300px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .img-1{
+                background-image:url(../img/fight.jpg);
+            }
+            .img-2{
+                background-image:url(../img/cry.jpeg);
+            }
+            .img-3{
+                background-image:url(../img/tempo.jpg);
+            }
+            p{
+                height: 340px;
+            }
         }
     }
     .self-intro{
@@ -58,102 +197,13 @@
                 transition: all 0.3s;
                 &:hover,&:active{
                     color: $dcard-blue;
+                    transform: scale(1.05);
                 }
             }
         }
     }
-    .test{
-        max-width: 100%;
-        height: 600px;
-    }
-    .slogan{
-        padding: 90px 50px;
-        line-height: 1.8;
-    }
-    .b-slogan{
-        font-size: 40px;
-    }
-    .block1,.block2{
-        font-size: 30px;
-        background: $third;
-        max-width: 992px;
-        margin: 50px auto 0px;
-        padding: 10px;
-        line-height: 1.6;
-    }
-    .dialog-bottom{
-        margin: 50px auto 40px;
-        max-width: 992px;
-        height: 88px;
-        background: #888888;
-        position: relative;
-        &:last-child{
-            margin: 0 auto;
-        }
-    }
-    .dialog-bottom::after {
-        border-color: #888888 #888888 transparent transparent;
-        border-style: solid solid solid solid;
-        /* 設定邊框大小可拼湊出任意形狀的三角形 */
-        border-width: 15px 10px 15px 10px;
-        bottom: -29px;
-        /* 必須指定，才能顯示內容 */
-        content: "";
-        height: 0px;
-        left: 30px;
-        /* 必須指定，否則會變梯形 */
-        position: absolute;
-        width: 0px;
-    }
-    .bg-note{
-        position: relative;
-        // background-image: url(../img/note1.jpeg);
-        background-color: white;
-        background-position: center;
-        background-repeat: repeat-y;
-        background-size: contain;
-        line-height: 1.8;
-        padding-top: 70px;
-        h2{
-            font-size: 40px;
-        }
-    }
-    .tape{
-        width: 200px;
-        height: 50px;
-        background-color: $second;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .weapon{
-        max-width: 992px;
-        line-height: 1.8;
-        padding: 50px 50px 90px;
-        li{
-            width: 30%;
-            .img-1,.img-2,.img-3{
-                height: 300px;
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-            .img-1{
-                background-image:url(../img/fight.jpg);
-            }
-            .img-2{
-                background-image:url(../img/cry.jpeg);
-            }
-            .img-3{
-                background-image:url(../img/tempo.jpg);
-            }
-            p{
-                height: 340px;
-            }
-        }
-    }
 }
+
 @include w1200{
     .index {
         .banner .pcb-slogan{

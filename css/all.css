@@ -338,6 +338,11 @@ table {
           justify-content: center;
 }
 
+.jcsa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .aic {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -528,6 +533,13 @@ body a {
   position: fixed;
   right: 60px;
   bottom: 60px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.backToTop:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media (max-width: 767px) {
@@ -553,6 +565,8 @@ body a {
 
 .footer a:hover, .footer a:active {
   color: #006AA6;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media (max-width: 520px) {
@@ -567,9 +581,179 @@ body a {
   }
 }
 
-.index .banner .pcb-slogan {
-  color: #00324E;
-  font-size: 45px;
+.index .banner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 0px 150px;
+  position: relative;
+}
+
+.index .banner img {
+  max-width: 600px;
+  height: 445px;
+  margin-left: 50px;
+  border-radius: 12px;
+}
+
+.index .banner .tri-l {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 110px;
+  left: 70px;
+  border-style: solid;
+  border-width: 80px 80px 0 0;
+  border-color: #006AA6 transparent transparent transparent;
+}
+
+.index .banner .tri-r {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 495px;
+  left: 608px;
+  border-style: solid;
+  border-width: 0 0 80px 80px;
+  border-color: transparent transparent #006AA6 transparent;
+}
+
+.index .banner .right {
+  position: relative;
+  border-radius: 12px;
+  max-width: 445px;
+  -webkit-box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.137);
+          box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.137);
+}
+
+.index .banner .dinu {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+}
+
+.index .pcb-slogan {
+  font-size: 40px;
+  line-height: 1.8;
+}
+
+.index .sub-banner {
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 100px 0px 120px;
+  position: relative;
+}
+
+.index .explain {
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 120px 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.index .explain .content-1, .index .explain .content-2, .index .explain .content-3 {
+  border-radius: 12px;
+  max-width: 50%;
+  -webkit-box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.137);
+          box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.137);
+  line-height: 1.5;
+}
+
+.index .explain .zolly {
+  width: 150px;
+  height: 200px;
+}
+
+.index .explain .remi {
+  width: 110px;
+  height: 160px;
+}
+
+.index .explain .dinu {
+  width: 140px;
+  height: 130px;
+}
+
+.index .add {
+  padding: 10px 50px 120px;
+  position: relative;
+  background-color: #F0F6FD;
+}
+
+.index .add .add-content {
+  max-width: 892px;
+  margin: 0 auto;
+  padding: 30px;
+  background: url(../img/90-50-10.png);
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.06) inset;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.06) inset;
+  line-height: 1.5;
+}
+
+.index .tape {
+  width: 200px;
+  height: 50px;
+  background-color: #00324E;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.index .index-con {
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 120px 50px;
+}
+
+.index .three {
+  background-color: white;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: contain;
+  line-height: 1.8;
+  padding-top: 70px;
+}
+
+.index .three h2 {
+  font-size: 35px;
+}
+
+.index .weapon {
+  max-width: 992px;
+  line-height: 1.8;
+  padding: 50px 50px 90px;
+}
+
+.index .weapon li {
+  width: 30%;
+}
+
+.index .weapon li .img-1, .index .weapon li .img-2, .index .weapon li .img-3 {
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.index .weapon li .img-1 {
+  background-image: url(../img/fight.jpg);
+}
+
+.index .weapon li .img-2 {
+  background-image: url(../img/cry.jpeg);
+}
+
+.index .weapon li .img-3 {
+  background-image: url(../img/tempo.jpg);
+}
+
+.index .weapon li p {
+  height: 340px;
 }
 
 .index .self-intro .pc-img {
@@ -631,114 +815,8 @@ body a {
 
 .index .self-intro .content li a:hover, .index .self-intro .content li a:active, .index .self-intro .content .line:hover, .index .self-intro .content .line:active, .index .self-intro .content .fb:hover, .index .self-intro .content .fb:active {
   color: #006AA6;
-}
-
-.index .test {
-  max-width: 100%;
-  height: 600px;
-}
-
-.index .slogan {
-  padding: 90px 50px;
-  line-height: 1.8;
-}
-
-.index .b-slogan {
-  font-size: 40px;
-}
-
-.index .block1, .index .block2 {
-  font-size: 30px;
-  background: #F0F6FD;
-  max-width: 992px;
-  margin: 50px auto 0px;
-  padding: 10px;
-  line-height: 1.6;
-}
-
-.index .dialog-bottom {
-  margin: 50px auto 40px;
-  max-width: 992px;
-  height: 88px;
-  background: #888888;
-  position: relative;
-}
-
-.index .dialog-bottom:last-child {
-  margin: 0 auto;
-}
-
-.index .dialog-bottom::after {
-  border-color: #888888 #888888 transparent transparent;
-  border-style: solid solid solid solid;
-  /* 設定邊框大小可拼湊出任意形狀的三角形 */
-  border-width: 15px 10px 15px 10px;
-  bottom: -29px;
-  /* 必須指定，才能顯示內容 */
-  content: "";
-  height: 0px;
-  left: 30px;
-  /* 必須指定，否則會變梯形 */
-  position: absolute;
-  width: 0px;
-}
-
-.index .bg-note {
-  position: relative;
-  background-color: white;
-  background-position: center;
-  background-repeat: repeat-y;
-  background-size: contain;
-  line-height: 1.8;
-  padding-top: 70px;
-}
-
-.index .bg-note h2 {
-  font-size: 40px;
-}
-
-.index .tape {
-  width: 200px;
-  height: 50px;
-  background-color: #497aa5;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.index .weapon {
-  max-width: 992px;
-  line-height: 1.8;
-  padding: 50px 50px 90px;
-}
-
-.index .weapon li {
-  width: 30%;
-}
-
-.index .weapon li .img-1, .index .weapon li .img-2, .index .weapon li .img-3 {
-  height: 300px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.index .weapon li .img-1 {
-  background-image: url(../img/fight.jpg);
-}
-
-.index .weapon li .img-2 {
-  background-image: url(../img/cry.jpeg);
-}
-
-.index .weapon li .img-3 {
-  background-image: url(../img/tempo.jpg);
-}
-
-.index .weapon li p {
-  height: 340px;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media (max-width: 1200px) {
@@ -936,8 +1014,8 @@ body a {
 }
 
 .script .banner {
-  height: 360px;
-  background: url(../img/banner2.jpeg);
+  height: 400px;
+  background: url(../img/script-banner.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -951,13 +1029,6 @@ body a {
 
 .script .banner h2 {
   font-size: 33px;
-}
-
-.script li p {
-  -webkit-animation: fadeIn;
-          animation: fadeIn;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
 }
 
 .script .main {
@@ -975,6 +1046,38 @@ body a {
   line-height: 1.8;
   width: 70%;
   border-radius: 30px 0 30px 0;
+}
+
+.script .praise .dinu {
+  width: 80px;
+  height: 100px;
+}
+
+.script .praise .saugy {
+  width: 70px;
+  height: 80px;
+}
+
+.script .praise .zolly {
+  width: 80px;
+  height: 110px;
+}
+
+.script .praise .lynn {
+  width: 70px;
+  height: 110px;
+}
+
+.script .praise .hoya {
+  width: 80px;
+  height: 100px;
+}
+
+.script li p {
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 .logline {
@@ -1175,6 +1278,14 @@ body a {
   height: 100%;
 }
 
+.video .bob {
+  position: absolute;
+  width: 150px;
+  height: 210px;
+  left: 100px;
+  top: 2590px;
+}
+
 @media (max-width: 767px) {
   .video .mov-title:before, .video .mov-title:after {
     width: 100px;
@@ -1215,8 +1326,8 @@ body a {
 }
 
 .experience .banner {
-  height: 360px;
-  background: url(../img/banner3.JPG);
+  height: 400px;
+  background: url(../img/exp-banner.JPG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1296,6 +1407,14 @@ body a {
   background-color: #00324E;
 }
 
+.experience .bg-pic {
+  background-image: url(../img/dtto-friends-宇宙.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 630px;
+}
+
 .experience .conclusion {
   max-width: 992px;
   margin: 0 auto;
@@ -1310,22 +1429,8 @@ body a {
 
 .experience .conclusion p {
   line-height: 1.8;
-  font-size: 30px;
-}
-
-.experience .bg-second {
-  position: relative;
-}
-
-.experience .tape {
-  width: 200px;
-  height: 50px;
-  background-color: #00324E;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  font-size: 45px;
+  margin-top: 350px;
 }
 
 @media (max-width: 900px) {
