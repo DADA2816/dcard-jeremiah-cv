@@ -70,6 +70,13 @@
         }
     }
 }
+@include pad{
+    .video{
+        .bob{
+            display: none;
+        }
+    }
+}
 @include w630{
     .video{
         .mov-title:before,.mov-title:after{

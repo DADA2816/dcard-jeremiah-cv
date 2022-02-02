@@ -1170,9 +1170,6 @@ body a {
 }
 
 @media (max-width: 767px) {
-  .script .banner {
-    height: 350px;
-  }
   .script .banner h2 {
     margin-top: 50px;
   }
@@ -1295,6 +1292,12 @@ body a {
   }
 }
 
+@media (max-width: 991px) {
+  .video .bob {
+    display: none;
+  }
+}
+
 @media (max-width: 630px) {
   .video .mov-title:before, .video .mov-title:after {
     width: 80px;
@@ -1408,11 +1411,11 @@ body a {
 }
 
 .experience .bg-pic {
-  background-image: url(../img/dtto-friends-宇宙.jpg);
+  background-image: url(../img/dtto-universe.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 630px;
+  height: 600px;
 }
 
 .experience .conclusion {
@@ -1427,10 +1430,21 @@ body a {
   background: white;
 }
 
-.experience .conclusion p {
+.experience .conclusion h2 {
   line-height: 1.8;
   font-size: 45px;
-  margin-top: 350px;
+  margin-top: 330px;
+  text-shadow: 2px 1px black;
+}
+
+@media (max-width: 1200px) {
+  .experience .bg-pic {
+    background-position: top;
+    height: 500px;
+  }
+  .experience .conclusion h2 {
+    margin-top: 270px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1452,20 +1466,24 @@ body a {
   .experience ul li .img-1, .experience ul li .img-2, .experience ul li .img-3, .experience ul li .img-4, .experience ul li .content {
     border-radius: 0px;
   }
-  .experience .conclusion p {
-    font-size: 24px;
+  .experience .conclusion h2 {
+    font-size: 40px;
   }
 }
 
 @media (max-width: 767px) {
-  .experience .banner {
-    height: 350px;
-  }
   .experience .banner h2 {
     margin-top: 50px;
   }
   .experience ul .border-line {
     width: 100%;
+  }
+  .experience .bg-pic {
+    height: 400px;
+  }
+  .experience .conclusion h2 {
+    font-size: 30px;
+    margin-top: 180px;
   }
 }
 
@@ -1495,6 +1513,9 @@ body a {
   .experience ul p {
     font-size: 18px;
   }
+  .experience .conclusion h2 {
+    margin-top: 170px;
+  }
 }
 
 @media (max-width: 414px) {
@@ -1506,6 +1527,9 @@ body a {
   }
   .experience .content {
     padding: 25px;
+  }
+  .experience .conclusion h2 {
+    font-size: 24px;
   }
 }
 /*# sourceMappingURL=all.css.map */
