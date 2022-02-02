@@ -60,7 +60,7 @@
     .explain{
         max-width: 992px;
         margin: 0 auto;
-        padding: 120px 50px;
+        padding: 150px 50px 120px;
         flex-wrap: wrap;
         .content-1,.content-2,.content-3{
             border-radius: 12px;
@@ -82,7 +82,7 @@
         }
     }
     .add{
-        padding: 10px 50px 120px;
+        padding: 10px 50px 150px;
         position: relative;
         background-color: $third;
         .add-content{
@@ -94,6 +94,13 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.06) inset;
             line-height: 1.5;
         }
+    }
+    .bg-pic{
+        background-image: url(../img/test.jpg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
     }
     .tape{
         width: 200px;
@@ -107,7 +114,13 @@
     .index-con{
         max-width: 992px;
         margin: 0 auto;
-        padding: 120px 50px;
+        padding: 120px 20px 0px;
+        .lil-logo{
+            width: 45px;
+            height: 45px;
+            display: inline-block;
+            vertical-align: -10px;
+        }
     }
 
     .three{

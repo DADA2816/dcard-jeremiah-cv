@@ -431,6 +431,10 @@ table {
   background-color: #FFF;
 }
 
+.bg-black {
+  background-color: #000;
+}
+
 .bg-dcard {
   background-color: #006AA6;
 }
@@ -648,7 +652,7 @@ body a {
 .index .explain {
   max-width: 992px;
   margin: 0 auto;
-  padding: 120px 50px;
+  padding: 150px 50px 120px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -677,7 +681,7 @@ body a {
 }
 
 .index .add {
-  padding: 10px 50px 120px;
+  padding: 10px 50px 150px;
   position: relative;
   background-color: #F0F6FD;
 }
@@ -691,6 +695,14 @@ body a {
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.06) inset;
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.06) inset;
   line-height: 1.5;
+}
+
+.index .bg-pic {
+  background-image: url(../img/test.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
 }
 
 .index .tape {
@@ -707,7 +719,14 @@ body a {
 .index .index-con {
   max-width: 992px;
   margin: 0 auto;
-  padding: 120px 50px;
+  padding: 120px 20px 0px;
+}
+
+.index .index-con .lil-logo {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  vertical-align: -10px;
 }
 
 .index .three {
