@@ -588,7 +588,7 @@ body a {
 .index .banner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 120px 0px 150px;
+  padding: 120px 50px 150px;
   position: relative;
 }
 
@@ -599,32 +599,9 @@ body a {
   border-radius: 12px;
 }
 
-.index .banner .tri-l {
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 110px;
-  left: 70px;
-  border-style: solid;
-  border-width: 80px 80px 0 0;
-  border-color: #006AA6 transparent transparent transparent;
-}
-
-.index .banner .tri-r {
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 495px;
-  left: 608px;
-  border-style: solid;
-  border-width: 0 0 80px 80px;
-  border-color: transparent transparent #006AA6 transparent;
-}
-
 .index .banner .right {
   position: relative;
   border-radius: 12px;
-  max-width: 445px;
   -webkit-box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.137);
           box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.137);
 }
@@ -634,7 +611,7 @@ body a {
   height: 150px;
   position: absolute;
   bottom: -18px;
-  left: 50%;
+  left: 40%;
 }
 
 .index .pcb-slogan {
@@ -649,10 +626,14 @@ body a {
   position: relative;
 }
 
+.index .a666 {
+  padding-top: 150px;
+}
+
 .index .explain {
   max-width: 992px;
   margin: 0 auto;
-  padding: 150px 50px 120px;
+  padding: 0px 50px 120px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -722,7 +703,7 @@ body a {
   padding: 120px 20px 0px;
 }
 
-.index .index-con .lil-logo {
+.index .lil-logo {
   width: 45px;
   height: 45px;
   display: inline-block;
@@ -760,15 +741,16 @@ body a {
 }
 
 .index .weapon li .img-1 {
-  background-image: url(../img/fight.jpg);
+  background-image: url(https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-position: left;
 }
 
 .index .weapon li .img-2 {
-  background-image: url(../img/cry.jpeg);
+  background-image: url(https://images.pexels.com/photos/1262302/pexels-photo-1262302.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
 }
 
 .index .weapon li .img-3 {
-  background-image: url(../img/tempo.jpg);
+  background-image: url(https://images.pexels.com/photos/7129036/pexels-photo-7129036.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
 }
 
 .index .weapon li p {

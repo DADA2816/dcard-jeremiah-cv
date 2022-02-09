@@ -2,7 +2,7 @@
     .banner{
         max-width: 1200px;
         margin: 0 auto;
-        padding: 120px 0px 150px;
+        padding: 120px 50px 150px;
         position: relative;
         // left
         img{
@@ -11,40 +11,38 @@
             margin-left: 50px;
             border-radius: 12px;
         }
-        .tri-l{
-            position: absolute;
-            width: 0;
-            height: 0;
-            top: 110px;
-            left: 70px;
-            border-style: solid;
-            border-width: 80px 80px 0 0;
-            border-color: $dcard-blue transparent transparent transparent;
-        }
-        .tri-r{
-            position: absolute;
-            width: 0;
-            height: 0;
-            top: 495px;
-            left: 608px;
-            border-style: solid;
-            border-width: 0 0 80px 80px;
-            border-color: transparent transparent $dcard-blue transparent;
-        }
+            // .tri-l{
+            //     position: absolute;
+            //     width: 0;
+            //     height: 0;
+            //     top: 110px;
+            //     left: 70px;
+            //     border-style: solid;
+            //     border-width: 80px 80px 0 0;
+            //     border-color: $dcard-blue transparent transparent transparent;
+            // }
+            // .tri-r{
+            //     position: absolute;
+            //     width: 0;
+            //     height: 0;
+            //     top: 495px;
+            //     left: 608px;
+            //     border-style: solid;
+            //     border-width: 0 0 80px 80px;
+            //     border-color: transparent transparent $dcard-blue transparent;
+            // }
         // right
         .right{
             position: relative;
             border-radius: 12px;
-            max-width: 445px;
             box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.137);
-
         }
         .dinu{
             width: 150px;
             height: 150px;
             position: absolute;
             bottom: -18px;
-            left: 50%;
+            left: 40%;
         }
     }
     .pcb-slogan{
@@ -57,10 +55,13 @@
         padding: 100px 0px 120px;
         position: relative;
     }
+    .a666{
+        padding-top: 150px;
+    }
     .explain{
         max-width: 992px;
         margin: 0 auto;
-        padding: 150px 50px 120px;
+        padding: 0px 50px 120px;
         flex-wrap: wrap;
         .content-1,.content-2,.content-3{
             border-radius: 12px;
@@ -115,14 +116,14 @@
         max-width: 992px;
         margin: 0 auto;
         padding: 120px 20px 0px;
-        .lil-logo{
-            width: 45px;
-            height: 45px;
-            display: inline-block;
-            vertical-align: -10px;
-        }
+        
     }
-
+    .lil-logo{
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+        vertical-align: -10px;
+    }
     .three{
         // background-image: url(../img/note1.jpeg);
         background-color: white;
@@ -149,13 +150,14 @@
                 background-repeat: no-repeat;
             }
             .img-1{
-                background-image:url(../img/fight.jpg);
+                background-image:url(https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+                background-position: left;
             }
             .img-2{
-                background-image:url(../img/cry.jpeg);
+                background-image:url(https://images.pexels.com/photos/1262302/pexels-photo-1262302.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
             }
             .img-3{
-                background-image:url(../img/tempo.jpg);
+                background-image:url(https://images.pexels.com/photos/7129036/pexels-photo-7129036.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
             }
             p{
                 height: 340px;
