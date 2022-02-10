@@ -53,7 +53,9 @@
     }
     //explain
     .a666{
-        padding-top: 150px;
+        padding-top: 100px;
+        font-size: 45px;
+        line-height: 1.8;
     }
     .explain{
         max-width: 992px;
@@ -67,7 +69,7 @@
             line-height: 1.5;
         }
         .content-1{
-            height: 150px;
+            height: 170px;
         }
         .content-2{
             height: 310px;
@@ -80,11 +82,8 @@
             }
             .arrow-right{
                 width: 120px;
-                height: 150px;
+                height: 160px;
             }
-        }
-        h3{
-            font-size: 30px;
         }
         .zolly{
             width: 100px;
@@ -101,7 +100,7 @@
     }
     // add
     .add{
-        padding: 10px 50px 150px;
+        padding: 10px 50px 120px;
         position: relative;
         background-color: $third;
         .add-content{
@@ -111,7 +110,7 @@
             background: url(../img/90-50-10.png);
             border: 1px solid #eee; 
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.06) inset;
-            line-height: 1.5;
+            line-height: 1.8;
         }
     }
     .tape{
@@ -344,6 +343,20 @@
         .block2{
             margin-bottom: 20px;
         }
+        .explain{
+            .zolly,.dinu,.lynn{
+                display: none;
+            }
+            .content-1{
+                height: 150px;
+                p{
+                    margin-left: 0;
+                }
+            }
+            .content-2{
+                height: auto;
+            }
+        }
     }
 }
 @include w900{
@@ -358,6 +371,9 @@
             }.focus{
                 font-size: 45px;
             }
+        }
+        .a666{
+            font-size: 40px;
         }
         .self-intro {
             flex-wrap: wrap;
@@ -440,8 +456,30 @@
         .bg-pic{
             height: 660px;
         }
-        .index-con,.three h2{
+        .index-con,.three h2,.a666{
             font-size: 35px;
+        }
+        .a666{
+            margin-bottom: 70px;
+        }
+        .explain{
+            padding: 0 50px 30px;
+            h3{
+                font-size: 30px;
+            }
+            p{
+                line-height: 1.8;
+            }
+            .arrow-down{
+                width: 80px;
+                height: 130px;
+            }
+        }
+        .explain-pc,.arrow-left,.arrow-right{
+            display: none;
+        }
+        .explain-mob{
+            display: block;
         }
     }
 }
@@ -472,7 +510,7 @@
         .bg-pic{
             height: 600px;
         }
-        .index-con,.three h2{
+        .index-con,.three h2,.a666{
             font-size: 30px;
         }
         .self-intro .content,.weapon li{
@@ -525,7 +563,25 @@
         .bg-pic{
             height: 490px;
         }
-        .index-con,.three h2{
+        .explain-mob{
+            .arrow-down{
+                width: 50px;
+                height: 80px;
+                margin-bottom: 20px;
+            }
+            h3{
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        .a666{
+            margin-bottom: 50px;
+        }
+        .index-con,.three h2,.a666{
             font-size: 24px;
         }
         .pc-title{
