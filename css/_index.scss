@@ -5,56 +5,53 @@
         padding: 120px 50px 150px;
         position: relative;
         // left
-        img{
+        .banner-img{
             max-width: 600px;
             height: 445px;
-            margin-left: 50px;
             border-radius: 12px;
         }
-            // .tri-l{
-            //     position: absolute;
-            //     width: 0;
-            //     height: 0;
-            //     top: 110px;
-            //     left: 70px;
-            //     border-style: solid;
-            //     border-width: 80px 80px 0 0;
-            //     border-color: $dcard-blue transparent transparent transparent;
-            // }
-            // .tri-r{
-            //     position: absolute;
-            //     width: 0;
-            //     height: 0;
-            //     top: 495px;
-            //     left: 608px;
-            //     border-style: solid;
-            //     border-width: 0 0 80px 80px;
-            //     border-color: transparent transparent $dcard-blue transparent;
-            // }
         // right
         .right{
             position: relative;
             border-radius: 12px;
             box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.137);
         }
+        .shock-icon{
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            right: 35px;
+            top: 300px;
+        }
         .dinu{
             width: 150px;
             height: 150px;
             position: absolute;
             bottom: -18px;
-            left: 40%;
+            left: 45%;
         }
     }
     .pcb-slogan{
-        font-size: 40px;
+        font-size: 45px;
         line-height: 1.8;
     }
     .sub-banner{
         max-width: 992px;
         margin: 0 auto;
-        padding: 100px 0px 120px;
+        padding: 100px 50px 0;
         position: relative;
+        h2{
+            font-size: 45px;
+            line-height: 1.8;
+        }
+        .focus{
+            font-size: 50px;
+        }
     }
+    .sub-banner-img{
+        padding-bottom: 100px;
+    }
+    //explain
     .a666{
         padding-top: 150px;
     }
@@ -63,25 +60,46 @@
         margin: 0 auto;
         padding: 0px 50px 120px;
         flex-wrap: wrap;
-        .content-1,.content-2,.content-3{
+        .content{
             border-radius: 12px;
             max-width: 50%;
             box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.137);
             line-height: 1.5;
         }
+        .content-1{
+            height: 150px;
+        }
+        .content-2{
+            height: 310px;
+        }
+        .content-img{
+            width: 100%;
+            .arrow-left{
+                width: 130px;
+                height: 160px;
+            }
+            .arrow-right{
+                width: 120px;
+                height: 150px;
+            }
+        }
+        h3{
+            font-size: 30px;
+        }
         .zolly{
-            width: 150px;
-            height: 200px;
-        }
-        .remi{
-            width: 110px;
-            height: 160px;
-        }
-        .dinu{
-            width: 140px;
+            width: 100px;
             height: 130px;
         }
+        .lynn{
+            width: 150px;
+            height: 110px;
+        }
+        .dinu{
+            width: 110px;
+            height: 100px;
+        }
     }
+    // add
     .add{
         padding: 10px 50px 150px;
         position: relative;
@@ -96,13 +114,6 @@
             line-height: 1.5;
         }
     }
-    .bg-pic{
-        background-image: url(../img/create-dtto-universe.jpg);
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 700px;
-    }
     .tape{
         width: 200px;
         height: 50px;
@@ -112,18 +123,32 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    // bg-pic
+    .bg-pic{
+        position: relative;
+        background-color: #0B090A;
+        height: 970px;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
     .index-con{
-        max-width: 992px;
-        margin: 0 auto;
-        padding: 120px 20px 0px;
-        
+        width: 100%;
+        font-size: 45px;
+        line-height: 1.8;
+        padding-top: 120px;
+        position: absolute;
+        top: 0;
+        left:50%;
+        transform: translate(-50%, 0%);
     }
     .lil-logo{
         width: 45px;
         height: 45px;
-        display: inline-block;
         vertical-align: -10px;
     }
+    // three
     .three{
         // background-image: url(../img/note1.jpeg);
         background-color: white;
@@ -133,10 +158,9 @@
         line-height: 1.8;
         padding-top: 70px;
         h2{
-            font-size: 35px;
+            font-size: 45px;
         }
     }
-    
     .weapon{
         max-width: 992px;
         line-height: 1.8;
@@ -221,8 +245,29 @@
 
 @include w1200{
     .index {
-        .banner .pcb-slogan{
-            font-size: 45px;
+        .banner{
+            padding: 70px 0px 0px;
+            .banner-img{
+                max-width: 100%;
+                height: auto;
+                border-radius: 0;
+                margin-right: 0;
+            }
+            .top{
+                display: block;
+            }
+            .right{
+                display: none;
+            }
+            .dinu-top{
+                width: 130px;
+                height: 130px;
+                vertical-align: -70%;
+            }
+            .shock-icon-top{
+                width: 60px;
+                height: 60px;
+            }
         }
         .self-intro .pc-img{
             .img-1{
@@ -271,6 +316,12 @@
                 height: 230px;
             }
         }
+        .bg-pic{
+            height: 880px;
+        }
+        .index-con{
+            padding-top: 100px;
+        }
         .weapon{
             li p{
                 height: 350px;
@@ -297,8 +348,16 @@
 }
 @include w900{
     .index {
-        .banner .pcb-slogan,.bg-note h2{
-            font-size: 35px;
+        .banner .pcb-slogan{
+            font-size: 40px;
+        }
+        .sub-banner{
+            h2{
+                font-size: 40px;
+                margin-bottom: 35px;
+            }.focus{
+                font-size: 45px;
+            }
         }
         .self-intro {
             flex-wrap: wrap;
@@ -313,7 +372,6 @@
                 height: auto;
                 padding: 90px 50px 0px;
             } 
-          
             .content{
                 width: 80%;
                 margin: 0 auto;
@@ -325,6 +383,15 @@
                     padding: 0px;
                 }
             }
+        }
+        .bg-pic{
+            height: 720px;
+        }
+        .index-con{
+            font-size: 40px;
+        }
+        .three h2{
+            font-size: 40px;
         }
         .weapon{
             flex-wrap: wrap;
@@ -346,22 +413,66 @@
     .index{
         .banner {
             padding-top: 120px;
-            img{
-                opacity: 1;
+            .pcb-slogan{
+                font-size: 35px;
+            }
+            .dinu-top{
+                width: 100px;
+                height: 100px;
+                vertical-align: -50%;
+            }
+            .shock-icon-top{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .sub-banner{
+            h2{
+                font-size: 35px;
+            }
+            .focus{
+                font-size: 40px;
             }
         }
         .slogan{
             padding: 70px 50px;
         }
-        .banner img{
-            margin-top: 10px;
+        .bg-pic{
+            height: 660px;
         }
-        
+        .index-con,.three h2{
+            font-size: 35px;
+        }
     }
 }
 @include w630{
     .index{
-        .banner .pcb-slogan{
+        .banner {
+            .pcb-slogan{
+                font-size: 30px;
+            }
+            .dinu-top{
+                width: 80px;
+                height: 80px;
+                vertical-align: -50%;
+            }
+            .shock-icon-top{
+                width: 45px;
+                height: 45px;
+            }
+        }
+        .sub-banner{
+            h2{
+                font-size: 30px;
+            }
+            .focus{
+                font-size: 35px;
+            }
+        }
+        .bg-pic{
+            height: 600px;
+        }
+        .index-con,.three h2{
             font-size: 30px;
         }
         .self-intro .content,.weapon li{
@@ -389,8 +500,39 @@
 }
 @include w520{
     .index {
-        .banner .pcb-slogan{
+        .banner{
+            .pcb-slogan{
+                font-size: 24px;
+            }
+            .dinu-top{
+                width: 60px;
+                height: 60px;
+            }
+            .shock-icon-top{
+                width: 35px;
+                height: 35px;
+            }
+        }
+        .sub-banner{
+            padding: 100px 50px 0;
+            h2{
+                font-size: 24px;
+            }
+            .focus{
+                font-size: 28px;
+            }
+        }
+        .bg-pic{
+            height: 490px;
+        }
+        .index-con,.three h2{
             font-size: 24px;
+        }
+        .pc-title{
+            display: none;
+        }
+        .mob-title{
+            display: block;
         }
         .weapon li{
             .img-1,.img-2,.img-3{
@@ -402,10 +544,32 @@
 @include iphone8-plus{
     .index{
         .banner{
-            padding-top: 100px;
-            img{
-                margin-top: 20px;
+            padding-top: 70px;
+            .top{
+                display: none;
             }
+            .bottom{
+                display: block;
+            }
+            .pcb-slogan{
+                padding: 50px 0px 30px;
+                margin-bottom: 0;
+            }
+            .dinu-top{
+                width: 100px;
+                height: 100px;
+                vertical-align: 0%;
+                margin: 20px 0 0 20px;
+            }
+            .shock-icon-top{
+                display: none;
+            }
+        }
+        .sub-banner{
+            padding: 70px 50px 0;
+        }
+        .sub-banner-img{
+            padding-bottom: 70px;
         }
         .slogan{
             padding: 50px 50px;

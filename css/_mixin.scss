@@ -51,6 +51,9 @@ $dcard-blue: #006AA6;
 .mr-5{
     margin-right: 25px;
 }
+.ml-5{
+    margin-left: 25px;
+}
 .mt-10{
     margin-top: 50px;
 }
@@ -215,6 +218,9 @@ $dcard-blue: #006AA6;
 .jcsa{
     justify-content: space-around;
 }
+.jcs{
+    justify-content: start;
+}
 
 // align-items
 .aic{
@@ -222,6 +228,9 @@ $dcard-blue: #006AA6;
 }
 .aife{
     align-items: flex-end;
+}
+.aifs{
+    align-items: flex-start;
 }
 
 // font-weight

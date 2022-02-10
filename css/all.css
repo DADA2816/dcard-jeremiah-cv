@@ -117,6 +117,10 @@ table {
   margin-right: 25px;
 }
 
+.ml-5 {
+  margin-left: 25px;
+}
+
 .mt-10 {
   margin-top: 50px;
 }
@@ -343,6 +347,12 @@ table {
       justify-content: space-around;
 }
 
+.jcs {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
 .aic {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -353,6 +363,12 @@ table {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.aifs {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .fwb {
@@ -592,10 +608,9 @@ body a {
   position: relative;
 }
 
-.index .banner img {
+.index .banner .banner-img {
   max-width: 600px;
   height: 445px;
-  margin-left: 50px;
   border-radius: 12px;
 }
 
@@ -606,24 +621,45 @@ body a {
           box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.137);
 }
 
+.index .banner .shock-icon {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 35px;
+  top: 300px;
+}
+
 .index .banner .dinu {
   width: 150px;
   height: 150px;
   position: absolute;
   bottom: -18px;
-  left: 40%;
+  left: 45%;
 }
 
 .index .pcb-slogan {
-  font-size: 40px;
+  font-size: 45px;
   line-height: 1.8;
 }
 
 .index .sub-banner {
   max-width: 992px;
   margin: 0 auto;
-  padding: 100px 0px 120px;
+  padding: 100px 50px 0;
   position: relative;
+}
+
+.index .sub-banner h2 {
+  font-size: 45px;
+  line-height: 1.8;
+}
+
+.index .sub-banner .focus {
+  font-size: 50px;
+}
+
+.index .sub-banner-img {
+  padding-bottom: 100px;
 }
 
 .index .a666 {
@@ -638,7 +674,7 @@ body a {
       flex-wrap: wrap;
 }
 
-.index .explain .content-1, .index .explain .content-2, .index .explain .content-3 {
+.index .explain .content {
   border-radius: 12px;
   max-width: 50%;
   -webkit-box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.137);
@@ -646,19 +682,45 @@ body a {
   line-height: 1.5;
 }
 
-.index .explain .zolly {
-  width: 150px;
-  height: 200px;
+.index .explain .content-1 {
+  height: 150px;
 }
 
-.index .explain .remi {
-  width: 110px;
+.index .explain .content-2 {
+  height: 310px;
+}
+
+.index .explain .content-img {
+  width: 100%;
+}
+
+.index .explain .content-img .arrow-left {
+  width: 130px;
   height: 160px;
 }
 
-.index .explain .dinu {
-  width: 140px;
+.index .explain .content-img .arrow-right {
+  width: 120px;
+  height: 150px;
+}
+
+.index .explain h3 {
+  font-size: 30px;
+}
+
+.index .explain .zolly {
+  width: 100px;
   height: 130px;
+}
+
+.index .explain .lynn {
+  width: 150px;
+  height: 110px;
+}
+
+.index .explain .dinu {
+  width: 110px;
+  height: 100px;
 }
 
 .index .add {
@@ -678,14 +740,6 @@ body a {
   line-height: 1.5;
 }
 
-.index .bg-pic {
-  background-image: url(../img/create-dtto-universe.jpg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 700px;
-}
-
 .index .tape {
   width: 200px;
   height: 50px;
@@ -697,16 +751,32 @@ body a {
           transform: translate(-50%, -50%);
 }
 
+.index .bg-pic {
+  position: relative;
+  background-color: #0B090A;
+  height: 970px;
+}
+
+.index .bg-pic img {
+  max-width: 100%;
+  height: auto;
+}
+
 .index .index-con {
-  max-width: 992px;
-  margin: 0 auto;
-  padding: 120px 20px 0px;
+  width: 100%;
+  font-size: 45px;
+  line-height: 1.8;
+  padding-top: 120px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
 }
 
 .index .lil-logo {
   width: 45px;
   height: 45px;
-  display: inline-block;
   vertical-align: -10px;
 }
 
@@ -720,7 +790,7 @@ body a {
 }
 
 .index .three h2 {
-  font-size: 35px;
+  font-size: 45px;
 }
 
 .index .weapon {
@@ -821,8 +891,29 @@ body a {
 }
 
 @media (max-width: 1200px) {
-  .index .banner .pcb-slogan {
-    font-size: 45px;
+  .index .banner {
+    padding: 70px 0px 0px;
+  }
+  .index .banner .banner-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+    margin-right: 0;
+  }
+  .index .banner .top {
+    display: block;
+  }
+  .index .banner .right {
+    display: none;
+  }
+  .index .banner .dinu-top {
+    width: 130px;
+    height: 130px;
+    vertical-align: -70%;
+  }
+  .index .banner .shock-icon-top {
+    width: 60px;
+    height: 60px;
   }
   .index .self-intro .pc-img .img-1 {
     width: 250px;
@@ -866,6 +957,12 @@ body a {
     width: 330px;
     height: 230px;
   }
+  .index .bg-pic {
+    height: 880px;
+  }
+  .index .index-con {
+    padding-top: 100px;
+  }
   .index .weapon li p {
     height: 350px;
   }
@@ -888,8 +985,15 @@ body a {
 }
 
 @media (max-width: 900px) {
-  .index .banner .pcb-slogan, .index .bg-note h2 {
-    font-size: 35px;
+  .index .banner .pcb-slogan {
+    font-size: 40px;
+  }
+  .index .sub-banner h2 {
+    font-size: 40px;
+    margin-bottom: 35px;
+  }
+  .index .sub-banner .focus {
+    font-size: 45px;
   }
   .index .self-intro {
     -ms-flex-wrap: wrap;
@@ -917,6 +1021,15 @@ body a {
   .index .self-intro .content .title {
     padding: 0px;
   }
+  .index .bg-pic {
+    height: 720px;
+  }
+  .index .index-con {
+    font-size: 40px;
+  }
+  .index .three h2 {
+    font-size: 40px;
+  }
   .index .weapon {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -938,19 +1051,58 @@ body a {
   .index .banner {
     padding-top: 120px;
   }
-  .index .banner img {
-    opacity: 1;
+  .index .banner .pcb-slogan {
+    font-size: 35px;
+  }
+  .index .banner .dinu-top {
+    width: 100px;
+    height: 100px;
+    vertical-align: -50%;
+  }
+  .index .banner .shock-icon-top {
+    width: 50px;
+    height: 50px;
+  }
+  .index .sub-banner h2 {
+    font-size: 35px;
+  }
+  .index .sub-banner .focus {
+    font-size: 40px;
   }
   .index .slogan {
     padding: 70px 50px;
   }
-  .index .banner img {
-    margin-top: 10px;
+  .index .bg-pic {
+    height: 660px;
+  }
+  .index .index-con, .index .three h2 {
+    font-size: 35px;
   }
 }
 
 @media (max-width: 630px) {
   .index .banner .pcb-slogan {
+    font-size: 30px;
+  }
+  .index .banner .dinu-top {
+    width: 80px;
+    height: 80px;
+    vertical-align: -50%;
+  }
+  .index .banner .shock-icon-top {
+    width: 45px;
+    height: 45px;
+  }
+  .index .sub-banner h2 {
+    font-size: 30px;
+  }
+  .index .sub-banner .focus {
+    font-size: 35px;
+  }
+  .index .bg-pic {
+    height: 600px;
+  }
+  .index .index-con, .index .three h2 {
     font-size: 30px;
   }
   .index .self-intro .content, .index .weapon li {
@@ -979,6 +1131,35 @@ body a {
   .index .banner .pcb-slogan {
     font-size: 24px;
   }
+  .index .banner .dinu-top {
+    width: 60px;
+    height: 60px;
+  }
+  .index .banner .shock-icon-top {
+    width: 35px;
+    height: 35px;
+  }
+  .index .sub-banner {
+    padding: 100px 50px 0;
+  }
+  .index .sub-banner h2 {
+    font-size: 24px;
+  }
+  .index .sub-banner .focus {
+    font-size: 28px;
+  }
+  .index .bg-pic {
+    height: 490px;
+  }
+  .index .index-con, .index .three h2 {
+    font-size: 24px;
+  }
+  .index .pc-title {
+    display: none;
+  }
+  .index .mob-title {
+    display: block;
+  }
   .index .weapon li .img-1, .index .weapon li .img-2, .index .weapon li .img-3 {
     height: 250px;
   }
@@ -986,10 +1167,32 @@ body a {
 
 @media (max-width: 414px) {
   .index .banner {
-    padding-top: 100px;
+    padding-top: 70px;
   }
-  .index .banner img {
-    margin-top: 20px;
+  .index .banner .top {
+    display: none;
+  }
+  .index .banner .bottom {
+    display: block;
+  }
+  .index .banner .pcb-slogan {
+    padding: 50px 0px 30px;
+    margin-bottom: 0;
+  }
+  .index .banner .dinu-top {
+    width: 100px;
+    height: 100px;
+    vertical-align: 0%;
+    margin: 20px 0 0 20px;
+  }
+  .index .banner .shock-icon-top {
+    display: none;
+  }
+  .index .sub-banner {
+    padding: 70px 50px 0;
+  }
+  .index .sub-banner-img {
+    padding-bottom: 70px;
   }
   .index .slogan {
     padding: 50px 50px;
@@ -1041,6 +1244,11 @@ body a {
 .script .praise .person {
   width: 28%;
   line-height: 1.5;
+}
+
+.script .praise .person img {
+  width: 100px;
+  height: 100px;
 }
 
 .script .praise .content {
